@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather App Interface</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="weather app interface.css" />
+  </head>
+  <body>
+    <section class="viewport">
+      <div class="warning">
+        <p>⚠️ Scroll-driven animations are not supported in this browser. Try this demo in Chrome 115+.</p>
+      </div>
+      <header class="flex-stack">
+        <h1 id="location">
+          Fresh Coast
+          <span id="summary">
+            29° | cloudy
+          </span>
+        </h1>
+        <p class="flex-stack" style="--space: 0.2rem" aria-hidden="true">
+          <span id="temperature" class="current-temp heading-lg">29</span>
+          <span id="condition">cloudy</span>
+        </p>
+        <ul id="range" class="cluster" role="list" style="--justify: center; --gap: 0.5rem">
+          <p>Fog</p>
+          <li>H: 26°</li>
+          <li>L: 29°</li>
+        </ul>
+      </header>
+
+      <main>
+        <article>
+          <h2 id="severe-weather">Severe Weather</h2>
+          <figure class="stack">
+            <blockquote>
+              <p>Hurricane Local Statement until 3:00 AM on Saturday. Additional alerts: Tropical Storm Watch,Rain likely overnight.</p>
+            </blockquote>
+            <figcaption>
+              <cite>National Weather Service</cite>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h2 id="hourly-forecast">Hourly forecast</h2>
+          <ol class="x-scroll" role="list">
+            <li class="forecast-tile">
+              <small>Now</small>
+              <span>☁️</span>
+              <span>29°</span>
+            </li>
+            <li class="forecast-tile">
+              <small class="small-caps">5pm</small>
+              <span>☁️</span>
+              <span>29°</span>
+            </li>
+            <li class="forecast-tile">
+              <small class="small-caps">6pm</small>
+              <span>☁️</span>
+              <span>28°</span>
+            </li>
+            <li class="forecast-tile">
+              <small class="small-caps">7pm</small>
+              <span>☁️</span>
+              <span>28°</span>
+            </li>
+            <li class="forecast-tile">
+              <small class="small-caps">7:36pm</small>
+              <span>🌅</span>
+              <span>Sunset</span>
+            </li>
+            <li class="forecast-tile">
+              <small class="small-caps">8pm</small>
+              <span>☁️</span>
+              <span>28°</span>
+            </li>
+            <li class="forecast-tile">
+              <small class="small-caps">9pm</small>
+              <span>☁️</span>
+              <span>28°</span>
+            </li>
+            <li class="forecast-tile">
+              <small class="small-caps">10pm</small>
+              <span>☁️</span>
+              <span>28°</span>
+            </li>
+            <li class="forecast-tile">
+              <small class="small-caps">11pm</small>
+              <span>☁️</span>
+              <span>28°</span>
+            </li>
+            <li class="forecast-tile">
+              <small class="small-caps">12pm</small>
+              <span>☁️</span>
+              <span>28°</span>
+            </li>
+            <li class="forecast-tile">
+              <small class="small-caps">1am</small>
+              <span>☁️</span>
+              <span>27°</span>
+            </li>
+            <li class="forecast-tile">
+              <small class="small-caps">2am</small>
+              <span>🌧️</span>
+              <span>27°</span>
+            </li>
+          </ol>
+        </article>
+
+        <article>
+          <h2 id="10-day-forecast">10-day forecast</h2>
+          <ol class="flex-stack" role="list" style="--space: 0.75rem">
+            <li class="forecast-row">
+              <span>Today</span>
+              <span>☁️</span>
+              <div class="range">
+                <span class="low">26°</span>
+                <div class="meter"></div>
+                <span class="high">29°</span>
+              </div>
+            </li>
+            <li class="forecast-row">
+              <span>Sat</span>
+              <span>🌧️</span>
+              <div class="range">
+                <span class="low">26°</span>
+                <div class="meter"></div>
+                <span class="high">28°</span>
+              </div>
+            </li>
+            <li class="forecast-row">
+              <span>Sun</span>
+              <span>🌧️</span>
+              <div class="range">
+                <span class="low">27°</span>
+                <div class="meter"></div>
+                <span class="high">28°</span>
+              </div>
+            </li>
+            <li class="forecast-row">
+              <span>Mon</span>
+              <span>☁️</span>
+              <div class="range">
+                <span class="low">27°</span>
+                <div class="meter"></div>
+                <span class="high">29°</span>
+              </div>
+            </li>
+            <li class="forecast-row">
+              <span>Tue</span>
+              <span>🌧️</span>
+              <div class="range">
+                <span class="low">26°</span>
+                <div class="meter"></div>
+                <span class="high">29°</span>
+              </div>
+            </li>
+            <li class="forecast-row">
+              <span>Wed</span>
+              <span>🌧️</span>
+              <div class="range">
+                <span class="low">26°</span>
+                <div class="meter"></div>
+                <span class="high">29°</span>
+              </div>
+            </li>
+            <li class="forecast-row">
+              <span>Thu</span>
+              <span>🌧️</span>
+              <div class="range">
+                <span class="low">26°</span>
+                <div class="meter"></div>
+                <span class="high">29°</span>
+              </div>
+            </li>
+            <li class="forecast-row">
+              <span>Fri</span>
+              <span>🌧️</span>
+              <div class="range">
+                <span class="low">26°</span>
+                <div class="meter"></div>
+                <span class="high">28°</span>
+              </div>
+            </li>
+            <li class="forecast-row">
+              <span>Sat</span>
+              <span>☁️</span>
+              <div class="range">
+                <span class="low">27°</span>
+                <div class="meter"></div>
+                <span class="high">29°</span>
+              </div>
+            </li>
+            <li class="forecast-row">
+              <span>Sun</span>
+              <span>🌧️</span>
+              <div class="range">
+                <span class="low">26°</span>
+                <div class="meter"></div>
+                <span class="high">27°</span>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <article>
+          <h2 id="air-quality">Air quality</h2>
+          <div class="stack">
+            <p>33- Good</p>
+            <p>Air quality index is 33, which is similar to yesterday and suitable for outdoor activity.</p>
+            <div class="meter" style="margin-top: 1rem"></div>
+          </div>
+        </article>
+
+        <article style="aspect-ratio: 5/1">
+          <h2 id="precipitation">Precipitation</h2>
+          <p>20%</p>
+        </article>
+
+        <article class="tile">
+          <h2>UV Index</h2>
+          <p>0-very weak</p>
+        </article>
+        <article class="tile">
+          <h2>Humidity</h2>
+          <p>87%</p>
+        </article>
+        <article class="tile">
+          <h2>SW wind</h2>
+          <p>14  mi/h</p>
+        </article>
+        <article class="tile">
+          <h2>Feels Like</h2>
+          <p>34°</p>
+        </article>
+        <article class="tile">
+          <h2>Visibility</h2>
+          <p>3 km</p>
+        </article>
+        <article class="tile">
+          <h2>Air Pressure</h2>
+          <p>1000 hpa</p>
+        </article>
+
+        <footer>
+          <h2>Weather for Fresh Coast</h2>
+          <p><small>Learn more about <a href="#">weather data</a> and <a href="#">map data</a></small></p>
+        </footer>
+        </d>
+      </main>
+  </body>
+</html>
